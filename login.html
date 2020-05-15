@@ -2,15 +2,45 @@
 <html>
     <head>
         <title>Login</title>
+        <link rel="stylesheet" href="background.css">
     </head>
+
+    <style media="screen">
+
+    input[type=submit]{
+      background-color: #fcbf05;
+
+      border-radius: 20px;
+      width: 100px;
+      height: 40px;
+    }
+    .container{
+	     background-color: rgba(247, 246, 242, 0.6);
+	     width: 40%;
+	     margin-left: 30%;
+	     margin-right: 40%;
+       padding: 16px;
+     }
+    </style>
     <body>
+
+      <div class="container">
         <h2>Login</h2>
 
-        <form class="" action="myTasks.html" method="post">
-          <input type="text" name="userid" value="" placeholder="User id"><br><br>
-          <input type="password" name="password" value="password" placeholder="Password"><br><br>
 
-          <input type="submit" name="Submit" value="Submit">
+        <form class="" action="myTasks.html" method="post">
+          <label>Username:</label>
+          <input type="text" name="userid" value="" placeholder="User id"><br><br>
+          <label>Password:</label>
+          <input type="password" name="password" placeholder="Password"><br><br>
+            <input type="submit" name="Submit" value="Submit">
+            <br><br>
+            <label><b>Are you new?</b></label>
+            <a href="newUser.html">Register here</a>
+
         </form>
+
+      </div>
+
     </body>
 </html>
