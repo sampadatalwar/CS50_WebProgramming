@@ -17,10 +17,63 @@
         padding: 5px;
         border-radius: 25px;
       }
+
+      .grid {
+          margin-top: 30px;
+          margin-left: 20px;
+          margin-right: 20px;
+          display: grid;
+          padding: 20px;
+          grid-column-gap: 30px;
+          grid-row-gap: 10px;
+          grid-template-columns: 50% auto;
+      }
+
+      .grid-item {
+          background-color: orange;
+          font-size: 20px;
+          padding: 10px;
+          border-radius: 25px;
+      }
+
+      button{
+        background-color: #fcbf05;
+        border-radius: 20px;
+        width: 100px;
+        height: 40px;
+        margin-left: 45%;
+        margin-top: 5%;
+      }
+
+      .button{
+
+      }
+
     </style>
     <body>
       <div class="heading">
         <h2>Here are your tasks</h2>
+      </div>
+
+      <div class="grid">
+          <div class="grid-item">
+            <h4>To-do List</h4>
+            <ul>
+              <li>Complete knowledge share presentation</li>
+              <li>Pick up dry cleaning</li>
+              <li>Complete loan verification process</li>
+            </ul>
+          </div>
+          <div class="grid-item">
+            <h4>Upcoming Events</h4>
+            <ul>
+              <li>6:30 pm - E-Summit Webinar</li>
+              <li>8:00 pm - DS/Algo Lecture</li>
+            </ul>
+          </div>
+      </div>
+      <div class="button">
+        <button type="button" name="" onclick="window.location.href = 'introduction.html';">Home</button>
       </div>
 
     </body>
